@@ -6,8 +6,10 @@ from .models import Music
 # Create your views here.
 
 def homepage(request):
-    music=Music.object.all()
-    return render(request,'home.html')
+    music=Music.objects.all()
+    return render(request,'home.html',{
+        'music':music
+    })
 
 
 
