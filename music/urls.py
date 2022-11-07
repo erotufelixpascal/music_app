@@ -1,10 +1,10 @@
-from django.conf.urls import path
+from django.urls import path
 from .views import homepage
 
-app_name='musics'
+app_name='music'
 
 urlpatterns= [
 
-   path('',homepage,name='home'),
+   path('',homepage,name='home_page'),
 
 ]
